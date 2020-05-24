@@ -9,6 +9,7 @@ blockchainManager.addToBlockToChain(new block(Date.now(), {from:'Itzik', to:'Dav
 blockchainManager.addToBlockToChain(new block(Date.now(), {from:'David', to:'Dani', amount:3.4}));
 //blockchainManager.addToBlockToChain(new block(uuidv4(), uuidv4(), null));
 
+blockchainManager.printChain();
 console.log(`validateChain: ${blockchainManager.validateChain()}`);
 console.log(`getBalance David: ${blockchainManager.getBalance('David')}`);
 console.log(`getBalance Dani: ${blockchainManager.getBalance('Dani')}`);
